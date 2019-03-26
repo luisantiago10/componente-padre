@@ -1,0 +1,6 @@
+{
+  "name": "componente-padre",
+  "short_name": "componente-padre",
+  "start_url": "/",
+  "display": "standalone"
+}

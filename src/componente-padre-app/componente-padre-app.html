@@ -1,0 +1,34 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/hijo-vista/hijo-vista.html ">
+<link rel="import" href="../../bower_components/hijo2-datos/hijo2-datos.html ">
+
+<dom-module id="componente-padre-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <hijo-vista></hijo-vista>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class ComponentePadreApp extends Polymer.Element {
+      static get is() { return 'componente-padre-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'componente-padre-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(ComponentePadreApp.is, ComponentePadreApp);
+  </script>
+</dom-module>
